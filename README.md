@@ -1,1 +1,1 @@
-Click [here](website.com) to test the application!
+Click [here](https://aolumoh.github.io/cookie-dialog/) to test the application!
