@@ -23,6 +23,44 @@
 
 <body>
   <main>
+    <div class="dialog box-one hidden">
+      <h3>Cookies</h3>
+      <p class="box-content">
+        We use cookies to improve your experience on our website. By clicking "Accept",
+        you agree to the use of cookies for marketing and analytics purposes
+      </p>
+      <div class="input-container">
+        <input type="button" class="accept" value="Accept">
+        <input type="button" class="settings" value="Settings">
+      </div>
+    </div>
+    <div class="dialog box-two hidden">
+      <h3>Settings</h3>
+      <p class="box-content"></p>
+      <div class="toggle-switch">
+        <span class="toggle-text">Browser</span>
+        <input type="checkbox" id="switch1" class="toggle-input">
+        <label for="switch1" class="toggle-label"></label>
+      </div>
+      <div class="toggle-switch">
+        <span class="toggle-text">Operating System</span>
+        <input type="checkbox" id="switch2" class="toggle-input">
+        <label for="switch2" class="toggle-label"></label>
+      </div>
+      <div class="toggle-switch">
+        <span class="toggle-text">Screen width</span>
+        <input type="checkbox" id="switch3" class="toggle-input">
+        <label for="switch3" class="toggle-label"></label>
+      </div>
+      <div class="toggle-switch">
+        <span class="toggle-text">Screen height</span>
+        <input type="checkbox" id="switch4" class="toggle-input">
+        <label for="switch4" class="toggle-label"></label>
+      </div>
+      <div class="input-container">
+        <input type="button" class="save" value="Save preferences">
+      </div>
+    </div>
     <p>
       A <span class="purple">cookie</span> is a small piece of text sent
       to your browser by a website you visit. It helps the site remember
@@ -30,6 +68,7 @@
       can make it easier to visit the site again and make the site more
       <span class="green">useful</span> to you.
     </p>
+    <div class="overlay hidden" id="overlay"></div>
   </main>
 </body>
 
