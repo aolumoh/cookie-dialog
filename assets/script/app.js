@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
     removeAllDialogs();
   } else {
     setTimeout(() =>
-    firstDisplay(), 1000);
+      firstDisplay(), 1000);
   }
 });
 
@@ -49,7 +49,7 @@ utils.listen('click', save, () => {
   console.log(document.cookie);
 });
 
-function firstDisplay(){
+function firstDisplay() {
   display(firstDialog);
   display(overlay);
 }
@@ -70,9 +70,9 @@ function getToggles() {
       utils.setCookie(toggleNames[i].textContent, value, lifetime);
       rejected = false;
     }
-    if (rejected)
-      utils.setCookie('User rejected cookies', 'None found', lifetime);
   }
+  if (rejected)
+    utils.setCookie('User rejected cookies', 'None found', lifetime);
 }
 
 function acceptAll() {
